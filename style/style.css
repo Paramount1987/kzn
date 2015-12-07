@@ -417,10 +417,15 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
 * html .jspCorner { margin: 0 -3px 0 0; }
 
+.other-news-wrap .jspHorizontalBar { bottom: 0; }
+
+.scroll-h .jspDrag:after { content: ""; position: absolute; z-index: 10; top: 50%; left: 50%; display: block; width: 7px; height: 6px; margin: -3px 0 0 3px; background: url("../i/icons/sprites.png"); background-position: -207px -125px; }
+
 .scroll-gray .jspTrack { background: rgba(0, 0, 0, 0.2); }
 .scroll-gray .jspDrag { background: rgba(0, 0, 0, 0.45); }
+.scroll-gray .jspDrag:after { content: ""; position: absolute; z-index: 10; top: 50%; left: 50%; display: block; width: 7px; height: 6px; margin: -3px 0 0 3px; background: url("../i/icons/sprites.png"); background-position: -264px -214px; }
 
-.film-item { margin: 30px 0; }
+.film-item { margin: 80px 0 40px 0; }
 
 .film-header { margin: 20px 0 30px 0; }
 .film-header:before, .film-header:after { content: " "; display: table; }
@@ -459,6 +464,8 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 
 .film-gallery { height: 150px; background: #ccc; }
 
+.film-shows { margin: 90px 0 20px 0; }
+
 .film-shows-top:before, .film-shows-top:after { content: " "; display: table; }
 .film-shows-top:after { clear: both; }
 .film-shows-top .title { float: left; margin: 10px 0; font: 500 36px/40px "Ubuntu", sans-serif; color: #000; letter-spacing: 0; }
@@ -466,7 +473,6 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 
 .film-shows-header:before, .film-shows-header:after { content: " "; display: table; }
 .film-shows-header:after { clear: both; }
-.film-shows-header .tag-list.pull-left { margin-left: -15px; }
 .film-shows-header .btn { padding: 1px 14px; }
 
 .table-cinema td { vertical-align: middle; padding: 10px 0 20px 0; }
@@ -527,16 +533,16 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 
 .news-short-list li:last-child { margin: 0; }
 
-.news-node { padding: 60px 0 40px 0; text-align: center; }
+.news-node { padding: 40px 0 40px 0; text-align: center; }
 .news-node .news-item { margin-bottom: 0; }
-.news-node .news-title { margin: 25px 0 5px 0; font: 500 36px/40px "Ubuntu", sans-serif; color: #000; }
+.news-node .news-title { margin: 25px 0; font: 500 36px/40px "Ubuntu", sans-serif; color: #000; }
 .news-node .news-body { padding: 10px 0; border: none; text-align: left; }
 .news-node .news-body .text { margin: 0 0 15px 0; }
 .news-node .news-body-header { padding: 15px 0; }
 .news-node .news-date { color: #8b8b8b; margin: 8px 0; }
 .news-node .news-type { margin: 8px 0; display: inline-block; border: 1px solid #525252; padding: 5px 12px; }
 
-.news-node-date { margin: 0; font: 500 24px/28px "Ubuntu", sans-serif; color: #979797; }
+.news-node-date { margin: -20px 0 0 0; font: 500 24px/28px "Ubuntu", sans-serif; color: #979797; }
 
 .social-wrap { margin: 0 0 0 -15px; }
 .social-wrap div { display: inline-block; vertical-align: top; width: 145px; height: 25px; background: #ccc; margin: 0 0 0 15px; }
@@ -547,6 +553,8 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .content-double .content-left { float: left; width: 66%; }
 .content-double .content-right { float: right; width: 32%; }
 
+.places-bl { padding-top: 40px; }
+
 .pink-bg { background: #f43c7a; }
 .pink-bg .btn-w:hover, .pink-bg .btn-w:active, .pink-bg .btn-w.active { background: #fff; color: #f43c7a; }
 
@@ -556,6 +564,7 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .white-bg { background: #fff; }
 
 .event-bg { background: #c73057; }
+.event-bg .btn-w:hover, .event-bg .btn-w:active, .event-bg .btn-w.active { background: #fff; color: #c73057; }
 
 .yellow-bg { background: #ffb91d; }
 
@@ -585,7 +594,7 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .places-header:before, .places-header:after { content: " "; display: table; }
 .places-header:after { clear: both; }
 
-.places-title { font: italic 300 15px/18px "Ubuntu", sans-serif; }
+.places-title { display: inline-block; font: italic 300 15px/20px "Ubuntu", sans-serif; }
 
 .places-link { position: relative; display: block; color: #000; text-transform: uppercase; font: 500 18px/20px "Ubuntu", sans-serif; height: 60px; overflow: hidden; }
 .places-link:hover, .places-link:focus { color: #000; }
@@ -594,19 +603,18 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .link-black { color: #000; }
 .link-black:hover { color: #000; }
 
-.comment-wrap { margin: 50px 0; }
+.comment-wrap { margin: 80px 0; }
 .comment-wrap .title { margin: 10px 0; color: #000; font: 500 25px/30px "Ubuntu", sans-serif; }
 
 .comment-plagin { height: 215px; background: #ccc; }
 
 .other-news-wrap { margin: 40px 0; }
 .other-news-wrap .title { margin: 10px 0 30px 0; color: #000; font: 500 25px/30px "Ubuntu", sans-serif; }
-.other-news-wrap .jspHorizontalBar { bottom: 0; }
 .other-news-wrap .news-title { position: relative; height: 55px; overflow: hidden; }
 .other-news-wrap .news-title:after { content: ""; position: absolute; z-index: 10; bottom: 0; left: 0; width: 100%; height: 18px; background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7) 40%, white 80%); background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.7) 40%, white 80%); background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 40%, white 80%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3FFFFFF', endColorstr='#FFFFFFFF', GradientType=0); }
 .other-news-wrap .news-item { margin-bottom: 5px; }
 
-.list-other-news { white-space: nowrap; margin: 0 0 10px -19px; font-size: 0; }
+.list-other-news { white-space: nowrap; margin: 0 0 40px -19px; font-size: 0; }
 .list-other-news li { margin: 0 0 0 21px; width: 312px; white-space: normal; }
 .list-other-news .news-title { font: 500 16px/18px "Ubuntu", sans-serif; }
 .list-other-news .news-body { padding-bottom: 10px; }
@@ -634,7 +642,7 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .img-thumbnail-item { position: relative; display: block; width: 136px; height: 135px; background: #ccc; overflow: hidden; }
 .img-thumbnail-item img { position: absolute; z-index: 5; height: 100%; width: auto; top: 0; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -o-transform: translate(-50%, 0); transform: translate(-50%, 0); }
 
-.info-node { margin: 50px 0; }
+.info-node { margin: 50px 0 60px 0; }
 .info-node .title { margin: 10px 0 20px 0; color: #000; font: 500 25px/30px "Ubuntu", sans-serif; }
 
 .list-info-node-wrap { margin: 0 0 20px 0; font-size: 0; }
@@ -648,7 +656,7 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 
 .list-info-node-wrap .list-info-node .list-dash li { margin: 2px 0; }
 
-.addr-node { margin: 50px 0; }
+.addr-node { margin: 80px 0; }
 .addr-node .title { margin: 10px 0 20px 0; color: #000; font: 500 25px/30px "Ubuntu", sans-serif; }
 
 .addr-wrap:before, .addr-wrap:after { content: " "; display: table; }
@@ -662,21 +670,54 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .addr-list p { margin: 0; }
 .addr-list p a { color: #525252; }
 
-.photo-gallery-wrap { margin: 50px 0; }
+.photo-gallery-wrap { margin: 70px 0; }
 .photo-gallery-wrap .title { margin: 10px 0 20px 0; color: #000; font: 500 25px/30px "Ubuntu", sans-serif; }
 
 .photo-gallery-inner { overflow: hidden; height: 215px; background: #ccc; }
 
+input.checkbox { position: relative; top: 4px; z-index: 10; width: 20px; height: 20px; margin-left: 15px; cursor: pointer; opacity: 0; filter: alpha(opacity=0); }
+input.checkbox + label { position: relative; z-index: 5; padding-left: 10px; }
+input.checkbox + label:before { content: ""; position: absolute; top: 0; left: -20px; width: 20px; height: 20px; border: 1px solid #565555; background: #fff; }
+
+input.checkbox:checked + label:before { background: #565555; }
+
+.skew-line { font-size: 0; width: 100%; min-width: 1000px; height: 1px; background: #cecece; -webkit-transform: skewX(0) skewY(-2deg); -ms-transform: skewX(0) skewY(-2deg); -o-transform: skewX(0) skewY(-2deg); transform: skewX(0) skewY(-2deg); }
+
+.middle .skew-line { position: absolute; left: 0; }
+
+.scroll-h + .skew-line { margin-top: 30px; }
+
+.film-item + .skew-line { margin-top: 20px; }
+
+.info-node + .skew-line { margin-top: -30px; }
+
+.addr-node + .skew-line { margin-top: -40px; }
+
+.comment-wrap + .skew-line { margin-top: -40px; }
+
+.photo-gallery-wrap + .skew-line { margin-top: -30px; }
+
 .header-top { padding: 0 0 90px 0; background: #232377; }
 
-.header-bottom { padding: 40px 0; }
+.header-bottom { padding: 40px 0 35px 0; }
 .header-bottom .title-h1 { color: #fff; margin: 0; text-transform: uppercase; font: 700 36px/36px "Ubuntu", sans-serif; }
 
+.header-top, .header-bottom { min-width: 1000px; }
 .header-top:before, .header-top:after, .header-bottom:before, .header-bottom:after { content: " "; display: table; }
 .header-top:after, .header-bottom:after { clear: both; }
 
 .header-top .logo a { color: #fff; }
 .header-top .logo a:hover, .header-top .logo a:focus { color: #fff; text-decoration: none; }
+
+.header-bottom { margin-top: -50px; margin-bottom: 20px; -webkit-transform: skewX(0) skewY(-2deg); -ms-transform: skewX(0) skewY(-2deg); -o-transform: skewX(0) skewY(-2deg); transform: skewX(0) skewY(-2deg); }
+.header-bottom .container { -webkit-transform: skewX(0) skewY(2deg); -ms-transform: skewX(0) skewY(2deg); -o-transform: skewX(0) skewY(2deg); transform: skewX(0) skewY(2deg); }
+.header-bottom .btn-w { position: relative; padding-left: 35px; top: -12px; }
+.header-bottom .btn-w:before, .header-bottom .btn-w:after { content: ""; position: absolute; z-index: 10; top: 19px; left: 10px; width: 14px; height: 4px; background: #fff; -webkit-transition: all linear 0.2s; -o-transition: all linear 0.2s; transition: all linear 0.2s; }
+.header-bottom .btn-w:after { left: 15px; top: 14px; width: 4px; height: 14px; }
+
+.blue-bg.header-bottom .btn-w:hover:after, .blue-bg.header-bottom .btn-w:hover:before { background: #54bce3; }
+
+.event-bg.header-bottom .btn-w:hover:after, .event-bg.header-bottom .btn-w:hover:before { background: #c73057; }
 
 .logo { margin: 25px 0 0 0; font: 700 30px/34px "Ubuntu", sans-serif; }
 .logo span { display: block; font: 400 25px/26px "Ubuntu", sans-serif; }
@@ -684,8 +725,8 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .menu-list { list-style: none; padding: 0; margin: 0; }
 .menu-list li { display: inline-block; vertical-align: top; }
 
-.menu-list li { position: relative; margin: 0 6px; padding: 35px 15px 0 15px; }
-.menu-list li:after { content: ""; position: absolute; z-index: 1; top: -130px; left: 0; width: 100%; height: 120px; background: #54bce3; -webkit-transition: top linear 0.2s; -o-transition: top linear 0.2s; transition: top linear 0.2s; -webkit-transform: skewX(0) skewY(-5deg); -ms-transform: skewX(0) skewY(-5deg); -o-transform: skewX(0) skewY(-5deg); transform: skewX(0) skewY(-5deg); }
+.menu-list li { position: relative; margin: 0 6px; padding: 32px 15px 0 15px; }
+.menu-list li:after { content: ""; position: absolute; z-index: 1; top: -135px; left: 0; width: 100%; height: 125px; background: #54bce3; -webkit-transition: top linear 0.2s; -o-transition: top linear 0.2s; transition: top linear 0.2s; -webkit-transform: skewX(0) skewY(-2deg); -ms-transform: skewX(0) skewY(-2deg); -o-transform: skewX(0) skewY(-2deg); transform: skewX(0) skewY(-2deg); }
 
 .menu-list li.first:after { background: #f43c7a; }
 
@@ -694,6 +735,8 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .menu-list li.fourth:after { background: #6c6fa5; }
 
 .menu-list li.six:after { background: #3eb2fd; }
+
+.menu-list li.five:after { background: #388cf5; }
 
 .menu-list li:hover:after { top: -20px; }
 
@@ -704,23 +747,107 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .link-menu { position: relative; z-index: 5; text-transform: uppercase; color: #fff; font: 500 17px/20px "Ubuntu", sans-serif; }
 .link-menu:hover, .link-menu:focus { color: #fff; text-decoration: none; }
 
+.link-menu:before { content: ""; position: relative; z-index: 10; display: block; background: url("../i/icons/sprites.png"); width: 21px; height: 24px; margin: 0 auto 8px auto; }
+
+.i-cinema:before { background-position: -264px 0; }
+
+.i-calendar:before { width: 24px; background-position: 0 -211px; }
+
+.i-map:before { width: 17px; background-position: -264px -44px; }
+
+.i-child:before { width: 24px; background-position: -87px -208px; }
+
+.i-lamp:before { width: 23px; background-position: -44px -211px; }
+
+.i-news:before { width: 24px; background-position: -131px -208px; }
+
+.i-title { position: relative; padding: 0 0 0 98px; }
+.i-title:after { content: ""; position: absolute; z-index: 10; background: url("../i/icons/sprites.png"); }
+
+.i-title:before { content: ""; position: absolute; z-index: 10; left: 0; bottom: 2px; width: 78px; height: 82px; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; }
+
+.i-cinema-b:before { border: 1px solid #f43c7a; background: #fff; }
+
+.i-cinema-b:after { top: -30px; left: 20px; width: 37px; height: 45px; background-position: -207px 0; }
+
+.i-calendar-b:before { background: #ffb91d; }
+
+.i-calendar-b:after { top: -31px; left: 15px; width: 47px; height: 47px; background-position: -70px 0; }
+
+.i-calendar-b-red:before { background: #fff; border: 1px solid #c73057; }
+
+.i-calendar-b-red:after { top: -31px; left: 15px; width: 47px; height: 47px; background-position: 0 -253px; }
+
+.i-map-b:before { background: #fff; border: 1px solid #54bce3; }
+
+.i-map-b:after { top: -30px; left: 20px; width: 37px; height: 57px; background-position: -70px -67px; }
+
+.i-lamp-b:before { background: #388cf5; }
+
+.i-lamp-b:after { top: -30px; left: 14px; width: 50px; height: 52px; background-position: 0 0; }
+
+.i-child-b:before { background: #fff; border: 1px solid #6c6fa5; }
+
+.i-child-b:after { top: -28px; left: 14px; width: 48px; height: 42px; background-position: -137px -61px; }
+
+.i-star-b:before { background: #6bc04b; }
+
+.i-star-b:after { top: -28px; left: 17px; width: 41px; height: 39px; background-position: 0 -152px; }
+
+.i-news-b:before { background: #fff; border: 1px solid #5fb4e5; }
+
+.i-news-b:after { top: -27px; left: 14px; width: 50px; height: 41px; background-position: -137px 0; }
+
+.tag-list.i-flag, .tag-list.i-plate, .tag-list.i-rouble, .tag-list.i-watch { position: relative; padding-left: 55px; }
+.tag-list.i-flag:before, .tag-list.i-plate:before, .tag-list.i-rouble:before, .tag-list.i-watch:before { content: ""; position: absolute; z-index: 5; top: 4px; left: 0; width: 35px; height: 35px; background: url("../i/icons/sprites.png"); }
+
+.tag-list.i-plate:before { background-position: -116px -152px; }
+
+.tag-list.i-rouble:before { background-position: -61px -152px; }
+
+.tag-list.i-flag:before { background-position: -207px -65px; }
+
+.tag-list.i-watch:before { background-position: -171px -152px; }
+
+.comment-icon { margin: 0 0 0 10px; }
+
+.comment-icon, .reviewed-icon { position: relative; display: inline-block; padding-left: 22px; }
+.comment-icon:before, .reviewed-icon:before { content: ""; position: absolute; z-index: 5; top: 4px; left: 0; width: 16px; height: 14px; background: url("../i/icons/sprites.png"); }
+
+.comment-icon:before { background-position: -264px -88px; }
+
+.reviewed-icon:before { top: 6px; height: 10px; background-position: -264px -122px; }
+
+.i-rupor { position: relative; padding-left: 35px; }
+.i-rupor:before { content: ""; position: absolute; z-index: 5; top: 1px; left: 0; width: 24px; height: 16px; background: url("../i/icons/sprites.png"); background-position: -175px -211px; }
+
+.i-flag-star { position: relative; }
+.i-flag-star:before { content: ""; position: absolute; z-index: 5; top: 0; left: 20px; width: 39px; height: 60px; background: url("../i/icons/sprites.png"); background-position: 0 -72px; }
+
 .tags-wrap { padding: 20px 0; }
 
 .tag-list { list-style: none; padding: 0; margin: 20px 0; }
-.tag-list li { display: inline-block; margin: 0 0 15px 15px; font: 500 17px/40px "Ubuntu", sans-serif; color: #565555; }
-
-.event-item { overflow: hidden; }
+.tag-list li { display: inline-block; margin: 0 15px 15px 0; font: 500 17px/40px "Ubuntu", sans-serif; color: #565555; }
 
 .event-header { padding: 40px 0 0 0; color: #fff; }
 .event-header:before, .event-header:after { content: " "; display: table; }
 .event-header:after { clear: both; }
-.event-header h3 { margin: 0; text-transform: uppercase; font: 700 36px/50px "Ubuntu", sans-serif; }
+.event-header h3 { margin: 0; text-transform: uppercase; font: 700 36px/36px "Ubuntu", sans-serif; }
 .event-header .btn { margin: 0 0 0 20px; }
 .event-header .btn-last { margin: 0 0 0 70px; }
 
 .event-body { padding: 0 0 40px 0; }
 
 .news-img .events-time { position: absolute; z-index: 10; bottom: 0; left: 0; width: 100%; padding: 10px; font: 500 15px/18px "Ubuntu", sans-serif; color: #000; background: rgba(255, 255, 255, 0.8); }
+
+.skew-bl { -webkit-transform: skewX(0) skewY(-2deg); -ms-transform: skewX(0) skewY(-2deg); -o-transform: skewX(0) skewY(-2deg); transform: skewX(0) skewY(-2deg); }
+.skew-bl .container { -webkit-transform: skewX(0) skewY(2deg); -ms-transform: skewX(0) skewY(2deg); -o-transform: skewX(0) skewY(2deg); transform: skewX(0) skewY(2deg); }
+
+.event-item .pink-bg { margin-top: -50px; }
+
+.event-item .blue-bg, .event-item .interest-bl, .event-item .violet-bg, .event-item .popular-bl, .event-item .news-bl { margin-top: -85px; }
+
+.news-bl { background: #5fb4e5; }
 
 .list-film { margin: 35px 0 35px -16px; white-space: nowrap; }
 .list-film li { width: 180px; margin: 0 0 20px 16px; }
@@ -734,13 +861,17 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .scroll-gray .list-film { margin: 15px 0 35px -16px; }
 .scroll-gray .link-film, .scroll-gray .link-film:hover, .scroll-gray .link-film:focus { color: #000; }
 
-.carousel-wrap { margin: 20px 0 0 0; }
+.carousel-wrap { margin: 15px 0 0 0; }
 
-.list-qube { margin: 0 0 0 -2px; padding: 0; list-style: none; font-size: 0; }
-.list-qube li { display: inline-block; vertical-align: top; width: 488px; margin: 0 0 2px 2px; position: relative; height: 215px; overflow: hidden; }
-.list-qube li img { display: block; width: 100%; -webkit-transition: all ease 0.9s; -o-transition: all ease 0.9s; transition: all ease 0.9s; }
+.slick-list { height: 460px !important; }
 
-.list-qube li:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); -o-transform: scale(1.1); transform: scale(1.1); }
+.event-news-item .slick-list { height: 480px !important; }
+
+.list-qube { margin: 0 0 0 -0.2%; padding: 0; list-style: none; font-size: 0; }
+.list-qube li { display: inline-block; vertical-align: top; width: 49.8%; margin: 0 0 2px 0.2%; position: relative; height: 215px; overflow: hidden; }
+.list-qube li img { display: block; width: 100%; -webkit-transition: all ease 0.8s; -o-transition: all ease 0.8s; transition: all ease 0.8s; }
+
+.list-qube li:hover img { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
 
 .qube-informer { position: absolute; left: 0; bottom: 0; padding: 0 15px 0 0; }
 .qube-informer .pull-left { padding: 10px 5px 10px 0; }
@@ -756,16 +887,24 @@ hr { margin-top: 21px; margin-bottom: 21px; border: 0; border-top: 1px solid #ee
 .link-qube { display: block; max-width: 345px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font: 500 18px/22px "Ubuntu", sans-serif; color: #000; text-transform: uppercase; }
 .link-qube:hover, .link-qube:focus { color: #000; }
 
+.link-qube-wrapper { display: block; }
+
 .blue-bg .link-qube, .blue-bg .qube-type-event, .violet-bg .link-qube, .violet-bg .qube-type-event { color: #fff; }
 
 /* Sticky footer styles----------------- */
 html { position: relative; min-height: 100%; }
 
-body { /* Margin bottom by footer height */ margin-bottom: 300px; }
+body { /* Margin bottom by footer height */ margin-bottom: 350px; }
 
-#footer { position: absolute; bottom: 0; width: 100%; min-width: 1000px; padding: 40px 0; height: 300px; background: #232377; }
+body.main-page { margin-bottom: 213px; }
+
+.middle { position: relative; z-index: 18; }
+
+#footer { position: absolute; z-index: 20; bottom: 0; width: 100%; min-width: 1000px; height: 350px; padding: 40px 0 25px 0; overflow: hidden; }
 #footer .footer-top:before, #footer .footer-top:after { content: " "; display: table; }
 #footer .footer-top:after { clear: both; }
+#footer .footer-inner { background: #232377; padding: 70px 0; -webkit-transform: skewX(0) skewY(-2deg); -ms-transform: skewX(0) skewY(-2deg); -o-transform: skewX(0) skewY(-2deg); transform: skewX(0) skewY(-2deg); }
+#footer .container { -webkit-transform: skewX(0) skewY(2deg); -ms-transform: skewX(0) skewY(2deg); -o-transform: skewX(0) skewY(2deg); transform: skewX(0) skewY(2deg); }
 
 .footer-top .logo { margin: 0; font: 700 40px/43px "Ununtu", sans-serif; }
 

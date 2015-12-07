@@ -25,12 +25,12 @@
             </div>
             <nav class="pull-right">
               <ul class="menu-list">
-                <li class="first"><a href="#" class="link-menu">кино</a></li>
-                <li class="second"><a href="#" class="link-menu">события</a></li>
-                <li class="third active"><a href="#" class="link-menu">места</a></li>
-                <li class="fourth"><a href="#" class="link-menu">с детьми</a></li>
-                <li class="five"><a href="#" class="link-menu">интересное</a></li>
-                <li class="six"><a href="#" class="link-menu">новости</a></li>
+                <li class="first"><a href="#" class="link-menu i-cinema">кино</a></li>
+                <li class="second"><a href="#" class="link-menu i-calendar">события</a></li>
+                <li class="third  active"><a href="#" class="link-menu i-map">места</a></li>
+                <li class="fourth"><a href="#" class="link-menu i-child">с детьми</a></li>
+                <li class="five"><a href="#" class="link-menu i-lamp">интересное</a></li>
+                <li class="six"><a href="#" class="link-menu i-news">новости</a></li>
               </ul>
             </nav>  
           </div><!-- end container -->
@@ -38,7 +38,7 @@
         <div class="header-bottom blue-bg">  
           <div class="container">
             <div class="pull-left">
-              <h1 class="title-h1">Места</h1>
+              <h1 class="title-h1 i-title i-map-b">Места</h1>
             </div>
             <div class="pull-right">
               <button class="btn btn-w">Добавить место</button>
@@ -48,7 +48,7 @@
       </header>
       <section class="tags-wrap">
         <div class="container">
-          <ul class="tag-list">
+          <ul class="tag-list i-flag">
             <li><a href="#" class="btn btn-gray active">Все</a></li>
             <li><a href="#" class="btn btn-gray">Покушать</a></li>
             <li><a href="#" class="btn btn-gray">Развлечения</a></li>
@@ -58,16 +58,16 @@
             <li><a href="#" class="btn btn-gray">Активный отдых</a></li>
             <li><a href="#" class="btn btn-gray">Учеба</a></li>
           </ul>
-          <ul class="tag-list">
+          <ul class="tag-list i-plate">
             <li><a href="#" class="btn btn-gray">Все</a></li>
             <li><a href="#" class="btn btn-gray">Кафе</a></li>
             <li><a href="#" class="btn btn-gray">Рестораны</a></li>
             <li><a href="#" class="btn btn-gray active">Кофейни</a></li>
             <li><a href="#" class="btn btn-gray">Пиццерии</a></li>
             <li><a href="#" class="btn btn-gray">Суши-бар</a></li>
-            <li><label>Бизнес-ланч</label></li>
+            <li><input type="checkbox" class="checkbox" id="bussiness-lunch"><label for="bussiness-lunch">Бизнес-ланч</label></li>
           </ul>
-          <ul class="tag-list">
+          <ul class="tag-list i-rouble">
             <li><span>Средний чек</span></li>
             <li><a href="#" class="btn btn-gray">100 руб.</a></li>
             <li><a href="#" class="btn btn-gray">200 руб.</a></li>
@@ -75,6 +75,7 @@
           </ul>
         </div>
       </section>
+      <div class="skew-line">linne</div>
 
       <div class="middle">
         <div class="places-bl">
@@ -117,7 +118,7 @@
                   <div class="pull-right"><span class="reviewed-icon">1058</span> <span class="comment-icon">23</span></div>
                 </div>
                 <div class="places-body">
-                  <a href="#" class="places-link">стрип-бар “Мурена Мурана”</a>
+                  <a href="#" class="places-link">стрип-бар “Мурена Мурана” стрип-бар “Мурена Мурана”</a>
                 </div>
               </li>
               <li>
@@ -164,11 +165,11 @@
             <a href="#" class="btn btn-gray btn-more btn-center">Показать ещё</a> 
             <div class="pagination-wrap">
               <ul class="list-inline pagination">
-                <li><a href="#"> b </a></li>
+                <li><a href="#">&larr;</a></li>
                 <li><a href="#" class="active">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
-                <li><a href="#"> f </a></li>
+                <li><a href="#">&rarr;</a></li>
               </ul>
             </div>  
           </div>
@@ -179,52 +180,54 @@
     </div><!-- end wrapper -->
 
     <footer id="footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="logo pull-left">
-            <a href="#">Куда пойти? <span>Казань</span></a>
-          </div>
-          <div class="footer-submenu pull-left">
-            <h3>о сайте</h3>
-            <ul class="submenu-list">
-              <li><a href="#">Рекламодателям</a></li>
-              <li><a href="#">Контакты</a></li>
-              <li><a href="#">О сайте</a></li>
-            </ul>
-          </div>
-          <div class="footer-submenu pull-left">
-            <h3>обратная связь</h3>
-            <ul class="submenu-list">
-              <li><a href="#">Добавить событие</a></li>
-              <li><a href="#">Добавить место</a></li>
-              <li><a href="#">Владельцам заведений</a></li>
-            </ul>
-          </div>
-          <div class="vk-wrapper pull-right">
-            <!-- VK Widget -->
-            <div id="vk_groups"></div>
-            <script type="text/javascript">
-            VK.Widgets.Group("vk_groups", {mode: 1, width: "220", height: "400", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 38959783);
-            </script>
-          </div>
-        </div>  
-        <ul class="menu-list-footer">
-          <li><a href="#">кино</a></li>
-          <li><a href="#">события</a></li>
-          <li><a href="#">места</a></li>
-          <li><a href="#">с детьми</a></li>
-          <li><a href="#">интересное</a></li>
-          <li><a href="#">новости</a></li>
-        </ul>
-        <div class="footer-bottom">
-          <div class="pull-left">
-            <p>© Информационное агенство <b>«Казань. Куда пойти?»</b></p>
-          </div>
-          <div class="pull-right">
-            <p>Разработка сайта - <a href="#">Webstudio</a></p>
-          </div>
-        </div>  
-      </div>
+      <div class="footer-inner">
+        <div class="container">
+          <div class="footer-top">
+            <div class="logo pull-left">
+              <a href="#">Куда пойти? <span>Казань</span></a>
+            </div>
+            <div class="footer-submenu pull-left">
+              <h3>о сайте</h3>
+              <ul class="submenu-list">
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О сайте</a></li>
+              </ul>
+            </div>
+            <div class="footer-submenu pull-left">
+              <h3>обратная связь</h3>
+              <ul class="submenu-list">
+                <li><a href="#">Добавить событие</a></li>
+                <li><a href="#">Добавить место</a></li>
+                <li><a href="#">Владельцам заведений</a></li>
+              </ul>
+            </div>
+            <div class="vk-wrapper pull-right">
+              <!-- VK Widget -->
+              <div id="vk_groups"></div>
+              <script type="text/javascript">
+              VK.Widgets.Group("vk_groups", {mode: 1, width: "220", height: "400", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 38959783);
+              </script>
+            </div>
+          </div>  
+          <ul class="menu-list-footer">
+            <li><a href="#">кино</a></li>
+            <li><a href="#">события</a></li>
+            <li><a href="#">места</a></li>
+            <li><a href="#">с детьми</a></li>
+            <li><a href="#">интересное</a></li>
+            <li><a href="#">новости</a></li>
+          </ul>
+          <div class="footer-bottom">
+            <div class="pull-left">
+              <p>© Информационное агенство <b>«Казань. Куда пойти?»</b></p>
+            </div>
+            <div class="pull-right">
+              <p>Разработка сайта - <a href="#">Webstudio</a></p>
+            </div>
+          </div>  
+        </div>
+      </div>  
     </footer><!-- end footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
