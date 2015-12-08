@@ -869,9 +869,9 @@ input.checkbox:checked + label:before { background: #565555; }
 
 .list-qube { margin: 0 0 0 -0.2%; padding: 0; list-style: none; font-size: 0; }
 .list-qube li { display: inline-block; vertical-align: top; width: 49.8%; margin: 0 0 2px 0.2%; position: relative; height: 215px; overflow: hidden; }
-.list-qube li img { display: block; width: 100%; -webkit-transition: all ease 0.8s; -o-transition: all ease 0.8s; transition: all ease 0.8s; }
+.list-qube li img { display: block; width: 100%; -webkit-filter: grayscale(60%); filter: grayscale(60%); -webkit-transition: all ease 0.8s; -o-transition: all ease 0.8s; transition: all ease 0.8s; }
 
-.list-qube li:hover img { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05); }
+.list-qube li:hover img { -webkit-filter: grayscale(0); filter: grayscale(0); }
 
 .qube-informer { position: absolute; left: 0; bottom: 0; padding: 0 15px 0 0; }
 .qube-informer .pull-left { padding: 10px 5px 10px 0; }

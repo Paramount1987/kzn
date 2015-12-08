@@ -4,7 +4,9 @@ $(document).ready(function(){
    $('.carousel-default').slick({
    	vertical: true,
    	dots: true,
-   	arrows: false
+   	arrows: false,
+   	autoplay: true,
+    autoplaySpeed: 4000
   });
 
 //-------------------scroll
