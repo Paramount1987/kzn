@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-//-------------------slider
+//--------------------------------------------------slider
    $('.carousel-default').slick({
    	vertical: true,
    	dots: true,
@@ -9,10 +9,10 @@ $(document).ready(function(){
     autoplaySpeed: 4000
   });
 
-//-------------------scroll
+//--------------------------------------------------scroll
 $('.scroll-h').jScrollPane();
 
-//-------------------film-review
+//------------------------------------------------film-review
 $(".film-link-review").click(function(e){
 
 e.preventDefault();
@@ -21,7 +21,7 @@ $(".film-review").animate({height: heightFull}, 500);
 $(this).css("display","none");
 
 });
-//-------------------list get and set height
+//--------------------------------------------------list get and set height
 if($(".list-other-news")){
 	var height = 0;
 
@@ -34,7 +34,7 @@ if($(".list-other-news")){
 
 }
 
-//-------------------gallery img
+//------------------------------------------------------------gallery img
 $(".gallery-img .img-thumbnail-item").click(function(e){
 
 e.preventDefault();
@@ -44,6 +44,10 @@ var img = $(this).attr("href");
 $(".gallery-img .img-review img").attr("src",img);
 
 });
+
+//-----------------------------------------------------------swipebox();
+if( $( ".swipebox" ) )
+  $( ".swipebox" ).swipebox();
 
 
 });
